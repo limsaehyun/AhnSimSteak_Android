@@ -52,4 +52,298 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/black" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/bmjua"
+        android:text="[1] 사람들의 거리두기 및 인원수 제한이 잘 이루어져 있다." />
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r1_btn1"
+            android:textSize="8dp"
+            android:text="매우 그렇다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r1_btn2"
+            android:textSize="8dp"
+            android:text="조금 그렇다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r1_btn3"
+            android:textSize="8dp"
+            android:text="보통이다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r1_btn4"
+            android:textSize="8dp"
+            android:text="조금 그렇다 않다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r1_btn5"
+            android:textSize="8dp"
+            android:text="전혀 그렇지 않다"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/bmjua"
+        android:text="[2] 출입 명부가 잘 작성되고 있다." />
+    <RadioGroup
+        android:id="@+id/rg2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r2_btn1"
+            android:textSize="8dp"
+            android:text="매우 그렇다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r2_btn2"
+            android:textSize="8dp"
+            android:text="조금 그렇다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r2_btn3"
+            android:textSize="8dp"
+            android:text="보통이다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r2_btn4"
+            android:textSize="8dp"
+            android:text="조금 그렇다 않다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r2_btn5"
+            android:textSize="8dp"
+            android:text="전혀 그렇지 않다"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/bmjua"
+        android:text="[3] 직원들의 방역이 잘 이루어지고 있다. (마스크 착용... 등)" />
+    <RadioGroup
+        android:id="@+id/rg3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r3_btn1"
+            android:textSize="8dp"
+            android:text="매우 그렇다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r3_btn2"
+            android:textSize="8dp"
+            android:text="조금 그렇다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r3_btn3"
+            android:textSize="8dp"
+            android:text="보통이다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r3_btn4"
+            android:textSize="8dp"
+            android:text="조금 그렇다 않다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r3_btn5"
+            android:textSize="8dp"
+            android:text="전혀 그렇지 않다"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/bmjua"
+        android:text="[4] 코로나 단계별 지침을 잘 준수하고 있다." />
+    <RadioGroup
+        android:id="@+id/rg4"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r4_btn1"
+            android:textSize="8dp"
+            android:text="매우 그렇다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r4_btn2"
+            android:textSize="8dp"
+            android:text="조금 그렇다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r4_btn3"
+            android:textSize="8dp"
+            android:text="보통이다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r4_btn4"
+            android:textSize="8dp"
+            android:text="조금 그렇다 않다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r4_btn5"
+            android:textSize="8dp"
+            android:text="전혀 그렇지 않다"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/bmjua"
+        android:text="[5] 환기 시스템이 잘 구축되어 있다." />
+    <RadioGroup
+        android:id="@+id/rg5"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r5_btn1"
+            android:textSize="8dp"
+            android:text="매우 그렇다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r5_btn2"
+            android:textSize="8dp"
+            android:text="조금 그렇다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r5_btn3"
+            android:textSize="8dp"
+            android:text="보통이다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r5_btn4"
+            android:textSize="8dp"
+            android:text="조금 그렇다 않다"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/r5_btn5"
+            android:textSize="8dp"
+            android:text="전혀 그렇지 않다"/>
+    </RadioGroup>
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="표준 평점 : " />
+        <TextView
+            android:id="@+id/tv_estimatedGPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/vaccine" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_setGPA1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#009688"
+                android:fontFamily="@font/bmjua"
+                android:text="표준 점수로 설정하기" />
+
+            <Button
+                android:id="@+id/btn_setGPA2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFC107"
+                android:fontFamily="@font/bmjua"
+                android:text="직접 점수 설정하기" />
+        </LinearLayout>
+
+    </LinearLayout>
+
 </LinearLayout>

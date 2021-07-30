@@ -31,17 +31,6 @@
             android:textSize="30dp"
             android:text="리뷰 작성" />
 
-        <ImageButton
-            android:background="@android:color/transparent"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:layout_gravity="center_vertical|right"
-            android:layout_marginRight="20dp"
-            android:id="@+id/ib_next"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            app:srcCompat="@drawable/ic_next" />
-
     </FrameLayout>
 
     <View
@@ -84,21 +73,22 @@
             android:id="@+id/iv_houseIcon"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_marginStart="111dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
             android:layout_marginTop="3dp"
-            android:layout_marginEnd="280dp"
             android:layout_marginBottom="24dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/home" />
 
         <ImageView
             android:id="@+id/tv_locationIcon"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_marginStart="111dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="120dp"
             android:layout_marginTop="1dp"
             android:layout_marginBottom="3dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -125,17 +115,14 @@
             app:layout_constraintBottom_toBottomOf="@+id/tv_locationIcon"
             app:layout_constraintStart_toEndOf="@+id/tv_locationIcon"
             app:layout_constraintTop_toTopOf="@+id/tv_locationIcon"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="1.0"
+            android:layout_marginLeft="20dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <View
         android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black" />
-
-    <View
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/black" />
@@ -147,6 +134,18 @@
         android:fontFamily="@font/bmjua"
         android:text="방문하신 업체의 방역을 평가해주세요!"
         android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_moveGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/teal_200"
+        android:fontFamily="@font/bmjua"
+        android:text="[방역수칙 표준 가이드]"
+        android:textColor="@color/black" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:gravity="center"
@@ -194,15 +193,6 @@
             app:srcCompat="@drawable/ic_star_outline" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_moveGuide"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:backgroundTint="@color/teal_200"
-        android:fontFamily="@font/bmjua"
-        android:text="[방역수칙 표준 가이드]"
-        android:textColor="@color/black" />
 
     <View
         android:layout_marginTop="10dp"
@@ -251,6 +241,5 @@
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/add" />
     </FrameLayout>
-
 
 </LinearLayout>

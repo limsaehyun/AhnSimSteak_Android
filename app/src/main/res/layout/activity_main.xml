@@ -1,195 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:id="@+id/fl"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/logo" />
+
+    <View
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#009688"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bitcore"
+        android:layout_gravity="center"
+        android:textColor="#936520"
+        android:textSize="50dp"
+        android:text="안심스테이크"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/meat" />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[!] 현제 '안심 스테이크' 는 초기단계로 '안전하게 먹자' 서비스만 진행중에 있습니다."
+        android:fontFamily="@font/bmjua"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="290dp"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/restaurent"
+                android:layout_width="130dp"
+                android:layout_height="140dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/restaurent" />
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bmeul"
+                android:text="안전하게 먹자"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical">
+            <ImageButton
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/gitar"
+                android:layout_width="130dp"
+                android:layout_height="140dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/miyonh" />
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/bmeul"
+                android:text="안전하게 놀자"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/teal_200"
         android:orientation="horizontal">
 
         <ImageButton
-            android:background="@android:color/transparent"
-            android:adjustViewBounds="true"
-            android:scaleType="fitCenter"
-            android:id="@+id/iv_menu"
-            android:layout_width="30dp"
-            android:layout_gravity="center_vertical"
-            android:layout_height="30dp"
-            android:layout_marginStart="20dp"
-            app:srcCompat="@drawable/ic_menu" />
-
-        <EditText
-            android:id="@+id/editTextTextPersonName"
-            android:layout_width="255dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
+            android:id="@+id/ib_map"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_gravity="center"
-            android:ems="10"
-            android:hint="장소, 주소 검색"
-            android:inputType="textPersonName" />
-
-        <ImageButton
-            android:background="@android:color/transparent"
             android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
             android:scaleType="fitCenter"
-            android:id="@+id/iv_search"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_gravity="right|center_vertical"
-            android:layout_marginRight="20dp"
-            app:srcCompat="@drawable/ic_search" />
+            app:srcCompat="@drawable/ic_map"
+            tools:ignore="VectorDrawableCompat" />
+
     </FrameLayout>
 
-    <View
-        android:layout_marginTop="50dp"
-        android:id="@+id/view"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/black"/>
 
-    <fragment
-        android:layout_marginTop="52dp"
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MapsActivity"
-        />
-
-    <androidx.drawerlayout.widget.DrawerLayout
-        android:id="@+id/drawer_layout"
-        android:layout_width="200dp"
-        android:clickable="false"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp">
-
-
-        <LinearLayout
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
-            android:layout_gravity="left"
-            android:background="@color/white"
-            android:gravity="center">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-
-                <ImageView
-                    android:id="@+id/tv_profileImage"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="50dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.112"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.023"
-                    app:srcCompat="@drawable/ic_launcher_background" />
-
-                <TextView
-                    android:id="@+id/tv_profileNickname"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="NICKNAME"
-                    android:textSize="18dp"
-                    android:textStyle="bold"
-
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.322"
-                    app:layout_constraintStart_toEndOf="@+id/tv_profileImage"
-                    app:layout_constraintTop_toTopOf="@+id/tv_profileImage" />
-
-                <TextView
-                    android:id="@+id/tv_profileId"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="104dp"
-                    android:text="id"
-                    android:textSize="13dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/tv_profileImage"
-                    app:layout_constraintEnd_toEndOf="parent" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginBottom="100dp"
-                    android:gravity="left"
-                    android:orientation="vertical"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.675"
-                    app:layout_constraintStart_toStartOf="parent">
-
-                    <TextView
-                        android:id="@+id/tv_announce"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="공지사항" />
-
-                    <TextView
-                        android:id="@+id/tv_userCenter"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="고객센터" />
-
-                    <TextView
-                        android:id="@+id/tv_infoChange"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="정보수정제한" />
-
-                    <TextView
-                        android:id="@+id/tv_setting"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="설정" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tv_goMenu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="156dp"
-                    android:text="메뉴 이동"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.396"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
-                    android:layout_marginTop="20dp"
-                    android:text="즐겨찾기"
-                    android:textSize="25dp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="@+id/tv_goMenu"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/tv_goMenu"
-                    app:layout_constraintTop_toBottomOf="@+id/tv_goMenu" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-        </LinearLayout>
-    </androidx.drawerlayout.widget.DrawerLayout>
-
-</RelativeLayout>
+</LinearLayout>

@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.hackathon_project">
+    package="com.example.ahnsimsteak">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="false"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Hackathon_Project">
-        <activity android:name=".review_add"></activity>
+        android:theme="@style/Theme.AhnSimSteak">
+        <activity android:name=".MapActivity"></activity>
         <activity android:name=".Evaluation_Guide" />
+        <activity android:name=".review_add" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,11 +22,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ToptenActivity" />
+        <activity android:name=".BunsickActivity" />
+        <activity android:name=".FastFoodActivity" />
+        <activity android:name=".DessertActivity" />
+        <activity android:name=".ChinaActivity" />
+        <activity android:name=".EuropeActivity" />
+        <activity android:name=".JapanActivity" />
+        <activity android:name=".KoreanActivity" />
+        <activity android:name=".RestaurentActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyD3WKyzrMwCcJTOeOoo9qDRe1hswFOolfs" />
-
+            android:value="api_key_hide" />
     </application>
 
 </manifest>
