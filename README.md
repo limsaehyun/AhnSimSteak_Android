@@ -11,7 +11,7 @@ Hello New World() Hackathon team project
 
 ### Introduction
 
---
+---
 
 업체에 방역 평점을 제공해줌으로써 판단을 도와주는 안드로이드 어플레케이션입니다.
 
