@@ -83,4 +83,3 @@ Hello New World() Hackathon team project
 <img src="https://user-images.githubusercontent.com/80076029/129440510-f7a55ae1-4527-4a2b-b174-de3f95a5577c.png" width="180px" height="320px" title="Main" alt="Main"></img>
 <img src="https://user-images.githubusercontent.com/80076029/129440511-5517ba36-ac05-49a9-aec0-083bbf176ef5.png" width="180px" height="320px" title="Choose" alt="Choose"></img>
 <img src="https://user-images.githubusercontent.com/80076029/129440512-8aa60581-3f82-4252-b56e-3693173cb874.png" width="180px" height="320px" title="Play" alt="Play"></img>
-<img src="https://user-images.githubusercontent.com/80076029/129440118-6733ac27-4d6e-470d-9bc9-22441bfd96a2.png" width="180px" height="320px" title="Main" alt="Main"></img>
